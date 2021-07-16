@@ -7,9 +7,57 @@ h1 {
     font-size: 28px;
     font-weight: bold;
 }
+h2{
+    color: white;
+    font-size: 24px;
+    font-style: italic;
+}
 p {
     background-color: black;
     color: yellow;
     font-size: 20px;
     font-style: italic;
+}
+
+/*Site nav*/
+a {
+    color: gold;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+    a:hover, a:active, a:focus {
+        color: lightcoral;
+        text-decoration: underline;
+        background-color: mintcream;
+    }
+
+nav a {
+    color: white;
+}
+
+    nav a:hover, a:active, a:focus {
+        text-decoration: none;
+    }
+
+nav ul {
+    background-color: maroon;
+}
+
+nav li:hover {
+    background-color: yellowgreen;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav ul li a {
+    padding: .4em;
+    display: block;
+}
+
+/*nav page highlighting*/
+.selected {
+    background-color: darkred
 }
