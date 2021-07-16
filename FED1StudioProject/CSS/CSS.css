@@ -1,0 +1,15 @@
+﻿body {
+    background-color: red;
+}
+h1 {
+    background-color: yellow;
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+}
+p {
+    background-color: black;
+    color: yellow;
+    font-size: 20px;
+    font-style: italic;
+}
