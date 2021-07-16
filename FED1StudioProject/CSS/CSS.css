@@ -1,10 +1,13 @@
-﻿body {
+﻿@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Yomogi&family=Zen+Tokyo+Zoo&display=swap');
+
+body {
     background-color: red;
 }
 
 h1 {
     background-color: yellow;
     color: black;
+    font-family:'Times New Roman', Times, serif;
     font-size: 28px;
     font-weight: bold;
 }
@@ -12,6 +15,7 @@ h1 {
 h2 {
     color: white;
     font-size: 24px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style: italic;
 }
 
@@ -19,6 +23,7 @@ p {
     background-color: black;
     color: yellow;
     font-size: 20px;
+    font-family: 'Yomogi' cursive;
     font-style: italic;
 }
 
