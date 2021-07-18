@@ -4,10 +4,29 @@ body {
     background-color: red;
 }
 
+header{
+    font-size: 36px;
+}
+
+/*positioning a single image through CSS*/
+#headerOverlay {
+    background-image: url(../Images/logo.jpg);
+    background-repeat: no-repeat;
+    background-size: 90px;
+    background-position: 3% center; /*horizontal vertical*/
+    padding: 2em;
+}
+
+header h1, header p {
+    margin: 7px 0 7px 150px;
+    /*This clears the text of the bg area*/
+}
+
 h1 {
-    background-color: yellow;
-    color: black;
-    font-family:'Times New Roman', Times, serif;
+    background-color: red;
+    background-size: 100% 100%;
+    color: gold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 28px;
     font-weight: bold;
 }
@@ -69,3 +88,100 @@ nav ul li a {
 .selected {
     background-color: darkred
 }
+
+
+
+/*#region Float & Clear*/
+/*
+    Float and Clear Notes
+
+    Floating an element in HTML is when you move it to the left or right of its parenting container.
+
+    Floating an element can cause the parenting container to collaps because the element is no longer contributing to its height.
+
+    You can use clears to force parenting containers to maintain their height and to ensure that content from below does NOT flow up beside the floated element. (Clear is the line in the sand)
+
+    Clears only clear the container they are placed in.
+*/
+
+#html, #js {
+    float: right;
+    height: 75px;
+    margin-left: 20px;
+}
+
+#css {
+    float: left;
+    height: 75px;
+    margin-right: 20px;
+}
+
+#frontendDev section {
+    width: 85%;
+    margin: 0 auto;
+}
+
+    #frontendDev section h3 {
+        margin: 10px 75px;
+    }
+
+    #frontendDev section p {
+        margin: 0 75px;
+    }
+
+/*For index.html - 2 column layout where 1 column is floated*/
+#leftColumn {
+    width: 73%;
+    border-right: 1px dashed teal;
+}
+
+#rightColumn {
+    width: 25%;
+    float: right;
+}
+
+aside h2 {
+    margin-top: 0;
+}
+
+/*For Team.html - 2 column layout with 1 column floated and margin to clear the space for the content*/
+#teamLeftColumn {
+    margin-right: 25%;
+    border-right: 1px dashed teal;
+}
+
+#teamRightColumn {
+    width: 25%;
+    float: right;
+}
+
+/*For Contact.html - 2 column layout with both columns floated - because both coluns are floated we do NOT want the parent element to collapse so we have add in a clear (line in the sand) */
+#contactLeftColumn {
+    width: 75%;
+    float: left;
+    border-right: 1px dashed teal;
+    box-sizing: border-box;
+    /*Changes the way width and height are figured. With border-box, you are saying that 73% width includes not only content, but also padding and border*/
+}
+
+#contactRightColumn {
+    width: 25%;
+    float: right;
+}
+
+/*For Classes.html - 2 column layout with 1 column floated and margin to clear the space for the content*/
+#classesLeftColumn {
+    margin-right: 25%;
+    border-right: 1px dashed teal;
+}
+
+#classesRightColumn {
+    width: 25%;
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+/*#endregion*/
