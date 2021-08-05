@@ -31,6 +31,8 @@ h1 {
     font-weight: bold;
 }
 
+
+
 h2 {
     color: white;
     font-size: 24px;
@@ -89,7 +91,49 @@ nav ul li a {
     background-color: darkred
 }
 
+/*Create a gallery layout for images.html*/
+div.galleryItem {
+    margin: 5px;
+    border: 1px solid #ccc;
+    display: inline-block; /*This is the line of code that allows the divs to line up next to each other*/
+    width: 350px;
+}
 
+    div.galleryItem:hover {
+        border: 1px solid yellow;
+    }
+
+    div.galleryItem img {
+        width: 100%;
+        height: auto;
+    }
+
+    div.galleryItem a:hover {
+        background-color: gold;
+    }
+
+#imageGallery {
+    margin: 0 auto; /*very helpful for centering content inside of an element*/
+    width: 85%;
+    text-align: center; /*centers the content inside of the element with the id of imageGallery*/
+}
+
+.mainWrapper {
+    padding: 1%;
+}
+
+footer {
+    padding: 3%;
+}
+
+nav ul {
+    margin: 0;
+}
+
+aside h2 {
+    padding: 2%;
+}
+/*#endregion*/
 
 /*#region Float & Clear*/
 /*
@@ -155,7 +199,7 @@ aside h2 {
     float: right;
 }
 
-/*For Contact.html - 2 column layout with both columns floated - because both coluns are floated we do NOT want the parent element to collapse so we have add in a clear (line in the sand) */
+/*For Contact.html - 2 column layout with both columns floated - because both columns are floated we do NOT want the parent element to collapse so we have add in a clear (line in the sand) */
 #contactLeftColumn {
     width: 75%;
     float: left;
