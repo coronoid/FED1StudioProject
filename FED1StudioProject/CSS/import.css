@@ -1,0 +1,7 @@
+﻿/*
+  An imported style sheet is integrated into another style sheet. When combined, they act as a single style sheet. If multiple elements of the same type are specified, the more recent one will take precedence. Because of this, imported style sheets are usually brought in at the top of other style sheets.
+*/
+
+body {
+    background-color: lightblue;
+}

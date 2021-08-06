@@ -32,20 +32,42 @@
         </ul>
         </nav>
     <main>
-        <h2> Got a question for us? Give us a call or shoot an email! </h2>
-        <br />
-        <h2>
-            Email:
-        </h2>
-        <p>
-            <a href="mailto:1992cma@gmail.com">1992cma@gmail.com</a>
-        </p>
-        <h2>
-            Phone:
-        </h2>
-        <p>
-            <a href="+01-660-631-7101">660-631-7101</a>
-        </p>
+        <h2> Got a question for us? Shoot us an email! </h2>
+        <div class="row">
+            <form action="#" method="get" onsubmit="validateForm(event)">
+                <div class="col-sm-offset-2 col-sm-8">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="text" id="tbName" name="name" class="form-control" placeholder="Name" />
+                            <span id="rfvName" class="invalid"></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="text" id="tbEmail" name="email" class="form-control" placeholder="Email" />
+                            <span id="rfvEmail" class="invalid"></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <input type="text" id="tbSubject" name="subject" class="form-control" placeholder="Subject" />
+                            <span id="rfvSubject" class="invalid"></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <textarea id="tbMessage" name="message" class="form-control" placeholder="Message"></textarea>
+                            <span id="rfvMessage" class="invalid"></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-success" value="Send Message" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
     </main>
         <footer>
             &copy; Copyright 2021 Corey M. Anderson

@@ -2,6 +2,12 @@
 
 body {
     background-color: red;
+    color: white;
+}
+
+main {
+    background-color: rgba(200, 50, 100, 0.5);
+    color: black
 }
 
 header{
@@ -116,6 +122,10 @@ div.galleryItem {
     margin: 0 auto; /*very helpful for centering content inside of an element*/
     width: 85%;
     text-align: center; /*centers the content inside of the element with the id of imageGallery*/
+}
+
+td {
+    text-align: center;
 }
 
 .mainWrapper {
