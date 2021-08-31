@@ -6,13 +6,34 @@
     <meta name="author" content="Corey M. Anderson" />
     <meta name="keywords" content="html, css, FED1, centriq, kcw, wrestling" />
     <title>Knuckles Championship Wrestling - Classes </title>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="CSS/CSS.css" rel="stylesheet" />
     <link href="Images/favicon.ico" rel="shortcut icon" />
 </head>
 <body>
     <header>
         <div id="headerOverlay">
+            <a href="index.html" class="logo"><img src="Images/logo.jpg" alt="KCW Logo" title="KCW Logo" /></a>
             <h1> Knuckles Championship Wrestling - Classes</h1>
+            <div class="socialHeader">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/AllEliteWrestling" target="_blank">
+                            <i class="fa fa-facebook-square" aria-hidden="true" title="FB" alt="Facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/allelitewrestling/" target="_blank">
+                            <i class="fa fa-instagram" aria-hidden="true" title="IG" alt="Instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/AEW" target="_blank">
+                            <i class="fa fa-twitter-square" aria-hidden="true" title="TWT" alt="Twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <nav>
@@ -31,75 +52,343 @@
             </li>
         </ul>
     </nav>
-    <main>
-        <p> Whether a coach, a manager, or a wrestler, here are classes for you! </p>
-        <div>
-            <table>
-                <thead>
-                    <tr>
-                        <!--the cell below "accounts for" 3 cells by merging them using colspan-->
-                        <th colspan="3">KCW's Wrestling Courses</th>
-                    </tr>
-                    <tr>
-                        <th>Class</th>
-                        <th>Class Purpose</th>
-                        <th>Instructors</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><i class="fa fa-html5" aria-hidden="true"></i> Promos </td>
-                        <td>Microphone skills</td>
-                        <td>
-                            Conan Daniels
-                        </td>
-                    </tr>
+    <div class="wrapper">
+        <main>
+            <section class="class-grid">
+                <article class="wrestling-classes">
+                    <h2 class="center-text"> If you are interested in wrestling for us, we have classes! Whether a coach, a manager, or a wrestler, here are classes for you! </h2>
+                    <h3 class="center-text">Class Subjects</h3>
+                    <div class="center">
+                        <!--Pics from here go to the classes-->
+                        <!--Promo image-->
+                        <a href="#promo">
+                            <article class="card">
+                                <img src="Images/promo.jpg" alt="Promo Work" title="Promo Work" width="400" height="200" />
+                                <h4>Promo Skills</h4>
+                                <p>Hook crowds to your story by "cutting a promo", speaking hype into it via a microphone.</p>
+                            </article>
+                        </a>
+                        <!--Selling image-->
+                        <a href="#selling">
+                            <article class="card">
+                                <img src="Images/selling.jpg" alt="Selling" title="Selling" width="400" height="200" />
+                                <h4>Selling</h4>
+                                <p>Make spectators believe what is happening in the ring during matches.</p>
+                            </article>
+                        </a>
+                        <!--Technique image-->
+                        <a href="#technique">
+                            <article class="card">
+                                <img src="Images/technique.jpg" alt="Techniques" title="Techniques" width="400" height="200" />
+                                <h4>Techniques</h4>
+                                <p>Use your skillset to tell a story and deliver your brand and style of fighting.</p>
+                            </article>
+                        </a>
 
-                    <tr>
-                        <td><i class="fa fa-css3" aria-hidden="true"></i> Selling </td>
-                        <td>Convincing audiences</td>
-                        <td>
-                            Marty Alex
-                        </td>
-                    </tr>
+                        <!--Character image-->
+                        <div class="column">
+                            <a href="#character">
+                                <article class="card">
+                                    <img src="Images/character.jpg" alt="Character" title="Character" width="400" height="200" />
+                                    <h4>Character</h4>
+                                    <p>Develop your persona, giving your character a backstory, personality, and goals.</p>
+                                </article>
+                            </a>
+                            <!--Safety image-->
+                            <a href="#safety">
+                                <article class="card">
+                                    <img src="Images/safety.jpg" alt="Safety" title="Safety" width="400" height="200" />
+                                    <h4>Safety</h4>
+                                    <p>Looking out for the safety of everyone involved in the ring.</p>
+                                </article>
+                            </a>
+                            <a href="#kayfabe">
+                                <article class="card">
+                                    <img src="Images/kayfabe.jpg" alt="KayFabe" title="Kayfabe" width="400" height="200" />
+                                    <h4>Kayfabe</h4>
+                                    <p>The importance of not breaking character by living by the storyline.</p>
+                                </article>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </article>
+            </section>
 
-                    <tr>
-                        <td><i class="fa fa-bolt" aria-hidden="true"></i> Techniques </td>
-                        <td>Moves and Finishers</td>
-                        <td>
-                            Bronson Priest
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td><i class="fa fa-database" aria-hidden="true"></i> Character </td>
-                        <td>Developing personas</td>
-                        <td>
-                            Michael Goldbraith
-                        </td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="2">Copyright &copy; CentriqTraining</td>
-                        <!-- The cell below merges two rows -->
-                        <td rowspan="2" style="text-align: right;">
-                            <span class="bold italic">
-                                All<br />Rights<br />Reserved
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <img src="Images/logo.jpg" style="height: 25px" />
-                        </td>
-                    </tr>
-                </tfoot>
-            </table>
-        </div>
-    </main>
+            <!--Promo Table-->
+            <section class="listOfClasses">
+                <article id="promo">
+                    <h2>Promo Work - Class List</h2>
+                    <table class="center">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Class</th>
+                                <th>Instructor</th>
+                                <th>Date and Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Maintaining Kayefabe</td><!--Explain what kayefabe is on the index page-->
+                                <td>Marty Alex</td>
+                                <td>Monday/Tuesday 8:00am-10:00am</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Modern Sensibilities</td>
+                                <td>Nicolas Johnson</td>
+                                <td>Wednesday/Thursday 8:00am-10:00am</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Maintaining Kayefabe</td>
+                                <td>Conan Daniels</td>
+                                <td>Friday/Saturday 8:00am-10:00am</td>
+                            </tr>
+                        </tbody>
+                        <!-- TFOOT-->
+                        <tfoot>
+                            <tr>
+                                <td colspan="4"><a href="#top" class="classTableFooterLink"><i aria-hidden="true" alt="Back To Top" title="Back To Top"></i> Back To Top <i aria-hidden="true"></i></a>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </article>
+                <!-- Selling Table -->
+                <article>
+                    <a id="selling"></a>
+                    <h2>Selling - Class List</h2>
+                    <table class="center">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Class</th>
+                                <th>Instructor</th>
+                                <th>Date and Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Convincing Injuries</td>
+                                <td>Michael 'The Animal' Goldbraith</td>
+                                <td>Monday/Tuesday 10:15am-1:00pm</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Fear</td>
+                                <td>Marty Alex</td>
+                                <td>Wednesday/Thursday 10:15am-1:00pm</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Intimidation</td>
+                                <td>Bronson Priest</td>
+                                <td>Friday/Saturday 10:15am-1:00pm</td>
+                            </tr>
+                        </tbody>
+                        <!-- TFOOT-->
+                        <tfoot>
+                            <
+                            <tr>
+                                <td colspan="4"><a href="#top" class="classTableFooterLink"><i aria-hidden="true" alt="Back To Top" title="Back To Top"></i> Back To Top <i aria-hidden="true"></i></a></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </article>
+                <!-- Technique Table -->
+                <article>
+                    <a id="technique"></a>
+                    <h2>Techniques - Class List</h2>
+                    <table class="center">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Class</th>
+                                <th>Instructor</th>
+                                <th>Date and Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Brawler</td>
+                                <td>Michael 'The Animal' Goldbraith</td>
+                                <td>Monday/Tuesday 1:15am-3:00pm</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Strong Style/MMA Style</td>
+                                <td>Hunter Shawn Angel</td>
+                                <td>Wednesday/Thursday 1:15am-3:00pm</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Catch-As-Catch-Can</td>
+                                <td>Bronson Priest</td>
+                                <td>Friday/Saturday 1:15am-3:00pm</td>
+                            </tr>
+                        </tbody>
+                        <!-- TFOOT-->
+                        <tfoot>
+                            <
+                            <tr>
+                                <td colspan="4"><a href="#top" class="classTableFooterLink"><i aria-hidden="true" alt="Back To Top" title="Back To Top"></i> Back To Top <i aria-hidden="true"></i></a></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </article>
+                <!-- Character Table -->
+                <article>
+                    <a id="character"></a>
+                    <h2>Character - Class List</h2>
+                    <table class="center">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Class</th>
+                                <th>Instructor</th>
+                                <th>Date and Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Heel</td>
+                                <td>Marty Alex</td>
+                                <td>Monday/Tuesday 3:15am-5:00pm</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Babyface</td>
+                                <td>Nicolas Johnson</td>
+                                <td>Wednesday/Thursday 3:15am-5:00pm</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Tweener/Anti-hero</td>
+                                <td>Conan Daniels</td>
+                                <td>Friday/Saturday 3:15am-5:00pm</td>
+                            </tr>
+                        </tbody>
+                        <!-- TFOOT-->
+                        <tfoot>
+                            <
+                            <tr>
+                                <td colspan="4"><a href="#top" class="classTableFooterLink"><i aria-hidden="true" alt="Back To Top" title="Back To Top"></i> Back To Top <i aria-hidden="true"></i></a></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </article>
+                <!-- Safety Table -->
+                <article>
+                    <a id="safety"></a>
+                    <h2>Safety - Class List</h2>
+                    <table class="center">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Class</th>
+                                <th>Instructor</th>
+                                <th>Date and Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Preventing Injury</td>
+                                <td>Marty Alex</td>
+                                <td>Monday/Tuesday 5:15am-7:00pm</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Ring Awareness</td>
+                                <td>Hunter Shawn Angel</td>
+                                <td>Wednesday/Thursday 5:15am-7:00pm</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Safety Communication</td>
+                                <td>Nicolas Johnson</td>
+                                <td>Friday/Saturday 5:15am-7:00pm</td>
+                            </tr>
+                        </tbody>
+                        <!-- TFOOT-->
+                        <tfoot>
+                            <tr>
+                                <td colspan="4"><a href="#top" class="classTableFooterLink"><i aria-hidden="true" alt="Back To Top" title="Back To Top"></i> Back To Top <i aria-hidden="true"></i></a></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </article>
+                <!-- Kayfabe Table -->
+                <article>
+                    <a id="kayfabe"></a>
+                    <h2>Kayfabe - Class List</h2>
+                    <table class="center">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Class</th>
+                                <th>Instructor</th>
+                                <th>Date and Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Staying in Character</td>
+                                <td>Michael 'The Animal' Goldbraith</td>
+                                <td>Monday/Tuesday 7:15am-8:00pm</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Social Media Kayfabe</td>
+                                <td>Marty Alex</td>
+                                <td>Wednesday/Thursday 7:15am-8:00pm</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>When to Break Kayfabe</td>
+                                <td>Nicolas Johnson</td>
+                                <td>Friday/Saturday 7:15am-8:00pm</td>
+                            </tr>
+                        </tbody>
+                        <!-- TFOOT-->
+                        <tfoot>
+                            <
+                            <tr>
+                                <td colspan="4"><a href="#top" class="classTableFooterLink"><i aria-hidden="true" alt="Back To Top" title="Back To Top"></i> Back To Top <i aria-hidden="true"></i></a></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </article>
+            </section>
+        </main>
+    </div>
     <footer>
         &copy; Copyright 2021 Corey M. Anderson
+        <div class="socialFooter">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/AllEliteWrestling" target="_blank">
+                        <i class="fa fa-facebook-square" aria-hidden="true" title="FB" alt="Facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/allelitewrestling/" target="_blank">
+                        <i class="fa fa-instagram" aria-hidden="true" title="IG" alt="Instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/AEW" target="_blank">
+                        <i class="fa fa-twitter-square" aria-hidden="true" title="TWT" alt="Twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>

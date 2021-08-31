@@ -6,13 +6,35 @@
     <meta name="author" content="Corey M. Anderson" />
     <meta name="keywords" content="html, css, FED1, centriq, kcw, wrestling" />
     <title>Knuckles Championship Wrestling - Contact</title>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="CSS/CSS.css" rel="stylesheet" />
+    <!--<link href="CSS/custom.css" rel="stylesheet" />-->
     <link href="Images/favicon.ico" rel="shortcut icon" />
 </head>
 <body>
     <header>
         <div id="headerOverlay">
-            <h1> Knuckles Championship Wrestling - Contact </h1>
+            <a href="index.html" class="logo"><img src="Images/logo.jpg" alt="KCW Logo" title="KCW Logo" /></a>
+                <h1> Knuckles Championship Wrestling - Contact </h1>
+                <div class="socialHeader">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/AllEliteWrestling" target="_blank">
+                                <i class="fa fa-facebook-square" aria-hidden="true" title="FB" alt="Facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/allelitewrestling/" target="_blank">
+                                <i class="fa fa-instagram" aria-hidden="true" title="IG" alt="Instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/AEW" target="_blank">
+                                <i class="fa fa-twitter-square" aria-hidden="true" title="TWT" alt="Twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
         </div>
     </header>
     <nav>
@@ -32,45 +54,73 @@
         </ul>
         </nav>
     <main>
-        <h2> Got a question for us? Shoot us an email! </h2>
-        <div class="row">
-            <form action="#" method="get" onsubmit="validateForm(event)">
-                <div class="col-sm-offset-2 col-sm-8">
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <input type="text" id="tbName" name="name" class="form-control" placeholder="Name" />
-                            <span id="rfvName" class="invalid"></span>
+        <section>
+            <article class="contactPage">
+                <h2 class="center-text"> Got a question for us? Shoot us an email! </h2>
+                <h3>Email: <a href="kcwgraps@mail.com">kcwgraps@mail.com</a></h3>
+                <h3>Phone:  <a href="tel:+01-233-867-5309">1-(233)-867-5309</a></h3>
+                <h3>Address: <a href="https://www.google.com/maps/place/Roasterie+Cafe/@39.0984051,-94.5852427,17z/data=!3m1!4b1!4m5!3m4!1s0x87c0f1345bded179:0x1a52d5d82e40b319!8m2!3d39.098401!4d-94.583054">1301 Main St, Kansas City, MO 64105</a></h3>
+                <div class="row center">
+                    <form action="#" method="get" onsubmit="validateForm(event)">
+                        <div class="col-sm-offset-2 col-sm-8 ">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" id="tbName" name="name" class="form-control" placeholder="Name" />
+                                    <span id="rfvName" class="invalid"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" id="tbEmail" name="email" class="form-control" placeholder="Email" />
+                                    <span id="rfvEmail" class="invalid"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <input type="text" id="tbSubject" name="subject" class="form-control" placeholder="Subject" />
+                                    <span id="rfvSubject" class="invalid"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <textarea id="tbMessage" name="message" class="form-control" placeholder="Message"></textarea>
+                                    <span id="rfvMessage" class="invalid"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <input type="submit" class="btn btn-success" value="Send Message" />
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <input type="text" id="tbEmail" name="email" class="form-control" placeholder="Email" />
-                            <span id="rfvEmail" class="invalid"></span>
-                        </div>
-                    </div>
-                    <div class="col-sm-12">
-                        <div class="form-group">
-                            <input type="text" id="tbSubject" name="subject" class="form-control" placeholder="Subject" />
-                            <span id="rfvSubject" class="invalid"></span>
-                        </div>
-                    </div>
-                    <div class="col-sm-12">
-                        <div class="form-group">
-                            <textarea id="tbMessage" name="message" class="form-control" placeholder="Message"></textarea>
-                            <span id="rfvMessage" class="invalid"></span>
-                        </div>
-                    </div>
-                    <div class="col-sm-12">
-                        <div class="form-group">
-                            <input type="submit" class="btn btn-success" value="Send Message" />
-                        </div>
-                    </div>
+                    </form>
                 </div>
-            </form>
-        </div>
+            </article>
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="JS/validation.js"></script>
     </main>
-        <footer>
-            &copy; Copyright 2021 Corey M. Anderson
-        </footer>
+    <footer>
+        &copy; Copyright 2021 Corey M. Anderson
+        <div class="socialFooter">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/AllEliteWrestling" target="_blank">
+                        <i class="fa fa-facebook-square" aria-hidden="true" title="FB" alt="Facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/allelitewrestling/" target="_blank">
+                        <i class="fa fa-instagram" aria-hidden="true" title="IG" alt="Instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/AEW" target="_blank">
+                        <i class="fa fa-twitter-square" aria-hidden="true" title="TWT" alt="Twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

@@ -74,8 +74,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="CSS\import.css" />
+    <Content Include="Images\character.jpg" />
+    <Content Include="Images\cloudy skies.jpg" />
     <Content Include="Images\favicon.ico" />
     <Content Include="Images\kansas city bg.jpg" />
+    <Content Include="Images\kayfabe.jpg" />
     <Content Include="Images\logo.jpg" />
     <Content Include="Images\pic1.jpg" />
     <Content Include="Images\pic2.jpg" />
@@ -83,6 +86,10 @@
     <Content Include="Images\pic4.jpg" />
     <Content Include="Images\pic5.jpg" />
     <Content Include="Images\pic6.jpg" />
+    <Content Include="Images\promo.jpg" />
+    <Content Include="Images\safety.jpg" />
+    <Content Include="Images\selling.jpg" />
+    <Content Include="Images\technique.jpg" />
     <Content Include="Images\wrestlerIndexImage.jpg" />
     <Content Include="index.html" />
     <Content Include="JS\lightbox.js" />

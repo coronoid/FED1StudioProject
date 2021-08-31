@@ -12,33 +12,49 @@
 
 
 header {
-    background-color: burlywood;
-    color: rebeccapurple;
+    color: white;
+}
+
+
+
+p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
 }
 
 main {
-    background-image: linear-gradient(90deg, red, yellow);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer {
-    background-color: dimgray;
     color: mintcream
 }
 
 h1 {
-    color: darkblue;
+    color: darkred;
     font-size: 30px;
+    text-align: center
 }
 
 aside h2 {
-    background-color: orchid;
     color: cornsilk;
     text-decoration: underline;
+    text-align: center
 }
 
 header h1 {
     color: darkslategray;
     font-size: 40px;
+    text-align: center
 }
 
 /*Nav styling*/
@@ -58,21 +74,21 @@ ul.blockList {
         /*CSS pseudo selectors allows us to change CSS styling based upon page events such as hovering over an element or targeting an element.*/
 
         ul.blockList a:hover {
-            background-color: darkorchid;
-            color: aquamarine;
+            background-color: yellow;
+            color: crimson;
         }
 
 /*Site nav*/
 a {
-    color: teal;
+    color: gold;
     font-weight: bold;
     text-decoration: none;
 }
 
     a:hover, a:active, a:focus {
-        color: lightblue;
+        color: goldenrod;
         text-decoration: underline;
-        background-color: darkblue;
+        background-color: red;
     }
 
 nav a {
@@ -84,11 +100,11 @@ nav a {
     }
 
 nav ul {
-    background-color: teal;
+    background-color: maroon;
 }
 
 nav li:hover {
-    background-color: darkblue;
+    background-color: yellowgreen;
 }
 
 nav li {
@@ -102,7 +118,7 @@ nav ul li a {
 
 /*nav page highlighting*/
 .selected {
-    background-color: darkblue;
+    background-color: darkgoldenrod;
 }
 
 /*colors*/
@@ -126,13 +142,13 @@ nav ul li a {
     color: rgb(255, 10, 85);
 }
 
-#colorGradient1 {
+/*#colorGradient1 {
     background-image: linear-gradient(90deg, red, yellow);
 }
 
 #colorGradient2 {
     background-image: radial-gradient(circle farthest-side at 50% 60%, pink, purple, blue);
-}
+}*/
 
 #fontdemo1 {
     font-family: serif;
@@ -207,24 +223,13 @@ nav ul li a {
     If you set a bg image using CSS, you cannot provide an alt attribute. Therefore you must provide an alternate way of describing the image.
 */
 
-ul li {
-    list-style-image: url(../Images/bullet_point_image_teal.png);
-}
 
-aside ul li {
-    list-style-image: url(../Images/bullet_point_image_orange.png);
-}
 
-/*Background Images*/
-header {
-    background-image: url(../Images/a-r-t-paola-589990-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+/*/*Background Images*/
 
 /*positioning a single image through CSS*/
 #headerOverlay {
-    background-image: url(../Images/computer_icon.png);
+    background-image: url(../Images/logo.jpg);
     background-repeat: no-repeat;
     background-size: 90px;
     background-position: 3% center; /*horizontal vertical*/
@@ -239,7 +244,7 @@ header h1, header p {
 header h1 {
     text-align: left;
     letter-spacing: 0.1em;
-    color: #96F3FA
+    color: yellow;
 }
 
 header {
@@ -248,21 +253,66 @@ header {
 
 /*background image for the entire page*/
 body {
-    background: url(../Images/ben-krygsman-745458-unsplash.jpg) no-repeat center center;
+    background-image: url('../Images/kansas city bg.jpg');
+    background-color: red;
+    color: white;
     background-size: cover;
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*This is a super sweet border, that you may want to comment out later*/
-nav ul {
+/*nav ul {
     min-height: 52px;
     background-image: url(../Images/border_wave.png);
     background-repeat: repeat-x;
     background-position: bottom;
     background-size: 200px;
+}*/
+
+
+/*#endregion*/
+
+/*#region*/
+/*********************************************
+             Custom Lightbox
+**********************************************/
+
+.thumb {
+    cursor: pointer;
 }
 
+#lightbox-container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding-top: 65px;
+    display: none;
+}
 
+    #lightbox-container p {
+        color: #fff;
+    }
+
+#lightbox-content img {
+    border: 10px solid gray;
+    margin: auto;
+}
+/*#endregion*/
+
+/*#region*/
+/*********************************************
+             Form Validation
+**********************************************/
+
+.invalid {
+    color: red;
+    font-style: italic;
+}
 /*#endregion*/
 
 /*#region CSS box model*/
@@ -301,33 +351,34 @@ div.galleryItem {
         border: 1px solid lightsalmon;
     }
 
-    div.galleryItem img{
+    div.galleryItem img {
         width: 100%;
         height: auto;
     }
-    div.galleryItem a:hover{
+
+    div.galleryItem a:hover {
         background-color: lightsalmon;
     }
 
-#imageGallery{
+#imageGallery {
     margin: 0 auto; /*very helpful for centering content inside of an element*/
     width: 85%;
     text-align: center; /*centers the content inside of the element with the id of imageGallery*/
 }
 
-.mainWrapper{
+.mainWrapper {
     padding: 1%;
 }
 
-footer{
+footer {
     padding: 3%;
 }
 
-nav ul{
+nav ul {
     margin: 0;
 }
 
-aside h2{
+aside h2 {
     padding: 2%;
 }
 /*#endregion*/
@@ -345,117 +396,110 @@ aside h2{
     Clears only clear the container they are placed in.
 */
 
-#html, #js{
+#html, #js {
     float: right;
     height: 75px;
     margin-left: 20px;
 }
 
-#css{
+#css {
     float: left;
     height: 75px;
     margin-right: 20px;
 }
 
-#frontendDev section{
+#frontendDev section {
     width: 85%;
     margin: 0 auto;
 }
 
-#frontendDev section h3{
-    margin: 10px 75px;
-}
+    #frontendDev section h3 {
+        margin: 10px 75px;
+    }
 
-#frontendDev section p{
-    margin: 0 75px;
-}
+    #frontendDev section p {
+        margin: 0 75px;
+    }
 
 /*For index.html - 2 column layout where 1 column is floated*/
-#leftColumn{
+#leftColumn {
     width: 73%;
-    border-right: 1px dashed teal;
 }
 
-#rightColumn{
+#rightColumn {
     width: 25%;
     float: right;
 }
 
-aside h2{
+aside h2 {
     margin-top: 0;
 }
 
 /*For HTML.html - 2 column layout with 1 column floated and margin to clear the space for the content*/
-#htmlLeftColumn{
+#htmlLeftColumn {
     margin-right: 25%;
-    border-right: 1px dashed teal;
 }
 
-#htmlRightColumn{
+#htmlRightColumn {
     width: 25%;
     float: right;
 }
 
 /*For CSS.html - 2 column layout with both columns floated - because both coluns are floated we do NOT want the parent element to collapse so we have add in a clear (line in the sand) */
-#cssLeftColumn{
+#cssLeftColumn {
     width: 75%;
     float: left;
-    border-right: 1px dashed teal;
     box-sizing: border-box;
     /*Changes the way width and height are figured. With border-box, you are saying that 73% width includes not only content, but also padding and border*/
 }
 
-#cssRightColumn{
+#cssRightColumn {
     width: 25%;
     float: right;
 }
 
-.clear{
+.clear {
     clear: both;
 }
 
 /*#endregion*/
 
 /*#region HTML Tables*/
-table, tr, td, th{
+table, tr, td, th {
     border: 1px solid black;
     border-collapse: collapse; /*avoids duplicate adjacent borders inside of a table*/
 }
 
-table{
+table {
     margin: auto;
     margin-bottom: 2em;
 }
 
-th{
+th {
     font-weight: bold;
     text-align: center;
 }
 
-td, th{
+td, th {
     padding: .3em;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
 }
 
-thead{
+thead {
     background-color: #96F3FA;
 }
 
-tfoot{
+tfoot {
     background-color: teal;
 }
 
-tfoot tr, tfoot td{
-    border: 0;
+tfoot tr, tfoot td {
+    border: 3px solid black;
+    border-collapse: collapse;
 }
 
-tbody tr:nth-child(even){
-    background-color: lightsalmon;
-}
+
 /*#endregion*/
 
-/*Resource Lists in resources/index.html*/
-div#webResources article{
-/*This will be useful for the classes.html in FED1 Studio Project*/
-    float: left;
-    width: 33.33%;
-}

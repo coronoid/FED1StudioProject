@@ -3,20 +3,198 @@
 body {
     background-color: red;
     color: white;
+    background-image: url('/Images/kansas city bg.jpg');
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 main {
     background-color: rgba(200, 50, 100, 0.5);
-    color: black
+}
+
+article {
+    display: block;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header{
     font-size: 36px;
 }
 
+header nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+header .logo img{
+    display: block;
+    width: 50%;
+    max-width: 90px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    border-radius: 10px;
+    float: left;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: maroon;
+    color: mintcream;
+}
+
+div {
+    display: block;
+}
+
+footer {
+    background-repeat: no-repeat;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.about {
+    margin-top: 30px;
+}
+
+.about img {
+    padding-right: 20px;
+    padding-left: 30px;
+    float: left
+}
+
+.about h3 {
+    font-size: 30px;
+}
+
+.about p {
+    font-size: 25px;
+    margin-bottom: 0;
+    margin-right: 30px;
+}
+
+.chooseUs {
+    margin-bottom: 20px;
+}
+
+.chooseUs h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 70px;
+}
+
+.chooseUs h3 {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    font-size: 28px;
+}
+
+.chooseUs p {
+    font-size: 25px;
+}
+
+.left {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.chooseUs .imageLeft {
+    margin-right: 30px;
+    float: left;
+}
+
+.right {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.chooseUs .imageRight {
+    margin-left: 30px;
+    float: right;
+    width: 450px;
+}
+
+.right h3 {
+    font-size: 40px;
+}
+
+
+.left h3 {
+    font-size: 40px;
+}
+
+.center img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.card {
+    display: block;
+    float: left;
+    border: 3px outset lightgray;
+    padding: 4px;
+    width: 400px;
+    height: 400px;
+    margin: 10px 35px;
+    font-size: 19px;
+}
+
+.class-grid a {
+    color: inherit;
+    display: block;
+    margin: auto;   
+    width: 100%;
+    float: none;
+    padding: 70px, 0;
+}
+
+s
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.myDiv {
+    width: 190px;
+    padding: 10px;
+    background: #f99f53;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid #f97200;
+    color: #fff;
+}
+
+.wrapper {
+    margin-top: 0px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+}
 /*positioning a single image through CSS*/
 #headerOverlay {
-    background-image: url(../Images/logo.jpg);
     background-repeat: no-repeat;
     background-size: 90px;
     background-position: 3% center; /*horizontal vertical*/
@@ -29,29 +207,34 @@ header h1, header p {
 }
 
 h1 {
-    background-color: red;
     background-size: 100% 100%;
     color: gold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 28px;
+    font-size: 40px;
     font-weight: bold;
+    text-align: center
 }
 
+
+td {
+    text-align: center;
+}
 
 
 h2 {
     color: white;
     font-size: 24px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style: italic;
+    text-align: center
 }
 
 p {
-    background-color: black;
-    color: yellow;
-    font-size: 20px;
+    color: white;
+    font-size: 30px;
     font-family: 'Yomogi' cursive;
     font-style: italic;
+    text-align: center
 }
 
 /*Site nav*/
@@ -118,22 +301,101 @@ div.galleryItem {
         background-color: gold;
     }
 
-#imageGallery {
-    margin: 0 auto; /*very helpful for centering content inside of an element*/
-    width: 85%;
-    text-align: center; /*centers the content inside of the element with the id of imageGallery*/
+.contactPage {
+    width: 610px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: auto;
+    overflow-x: auto;
+    min-height: 800px;
 }
 
-td {
+
+
+.teamMember {
+    clear: left;
+    width: 610px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: auto;
+    overflow-x: auto;
+    min-height: 800px;
+}
+
+.thumb{
+    cursor: pointer;
+}
+
+.teamMembers section article .teamMember {
+    clear: left;
+    margin: 8em auto;
+}
+
+.teamMembers section article img {
+    width: 100%;
+    max-width: 100px;
+    float: left;
+    margin-top: 0px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    border-radius: 100px;
+    box-shadow: 4px 5px 5px #999;
+}
+
+.teamMembers section article .memberName {
+    padding-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
     text-align: center;
 }
 
+.teamMembers section article .memberBio {
+    padding-top: 0px;
+    font-size: 20px;
+}
 .mainWrapper {
     padding: 1%;
 }
 
 footer {
     padding: 3%;
+    font-size: 17px;
+}
+
+footer .socialFooter {
+    font-size: 28px;
+}
+
+header .socialHeader {
+    -webkit-font-smoothing: antialiased;
+    width: 200px;
+    top: 30px;
+    right: 0;
+    position: absolute;
+    font-size: 28px;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: inherit;
+    line-height: 1;
+    font-family: FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    color: white;
 }
 
 nav ul {
@@ -201,7 +463,7 @@ aside h2 {
 /*For Team.html - 2 column layout with 1 column floated and margin to clear the space for the content*/
 #teamLeftColumn {
     margin-right: 25%;
-    border-right: 1px dashed teal;
+    border-right: 1px dashed
 }
 
 #teamRightColumn {
@@ -218,9 +480,68 @@ aside h2 {
     /*Changes the way width and height are figured. With border-box, you are saying that 73% width includes not only content, but also padding and border*/
 }
 
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
 #contactRightColumn {
     width: 25%;
     float: right;
+}
+
+.thumb {
+    cursor: pointer;
+}
+
+#lightbox-container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding-top: 65px;
+    display: none;
+}
+
+    #lightbox-container p {
+        color: #fff;
+    }
+
+#lightbox-content img {
+    border: 10px solid gray;
+    margin: auto;
+    box-shadow: 4px 5px 5px rgba(255, 0, 0, 0.55);
+    border-radius: 100px;
+}
+
+div.galleryItem {
+    margin: 5px;
+    border: 1px solid #ccc;
+    display: inline-block; /*This is the line of code that allows the divs to line up next to each other*/
+    width: 350px;
+}
+
+    div.galleryItem:hover {
+        border: 1px solid lightsalmon;
+    }
+
+    div.galleryItem img {
+        width: 100%;
+        height: auto;
+    }
+
+    div.galleryItem a:hover {
+        background-color: lightsalmon;
+    }
+
+#imageGallery {
+    margin: 0 auto; /*very helpful for centering content inside of an element*/
+    width: 85%;
+    text-align: center; /*centers the content inside of the element with the id of imageGallery*/
 }
 
 /*For Classes.html - 2 column layout with 1 column floated and margin to clear the space for the content*/

@@ -6,13 +6,52 @@
     <meta name="author" content="Corey M. Anderson" />
     <meta name="keywords" content="html, css, FED1, centriq, kcw, wrestling" />
     <title>Knuckles Championship Wrestling - Team</title>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="CSS/CSS.css" rel="stylesheet" />
     <link href="Images/favicon.ico" rel="shortcut icon" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div id="headerOverlay">
-            <h1> Knuckles Championship Wrestling - Team</h1>
+            <a href="index.html" class="logo"><img src="Images/logo.jpg" alt="KCW Logo" title="KCW Logo" /></a>
+                <h1> Knuckles Championship Wrestling - Team</h1>
+                <div class="socialHeader">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/AllEliteWrestling" target="_blank">
+                                <i class="fa fa-facebook-square" aria-hidden="true" title="FB" alt="Facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/allelitewrestling/" target="_blank">
+                                <i class="fa fa-instagram" aria-hidden="true" title="IG" alt="Instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/AEW" target="_blank">
+                                <i class="fa fa-twitter-square" aria-hidden="true" title="TWT" alt="Twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
         </div>
     </header>
     <nav>
@@ -31,49 +70,96 @@
             </li>
         </ul>
     </nav>
-    <main>
-        <h2 id="cssLeftColumn">
-            Get to know our team of professionals!
-            <i class="fa fa-star" aria-hidden="true"></i>
-            The place for true, gritty professional wrestling!
-            <i class="fa fa-star" aria-hidden="true"></i>
-        </h2>
-
-        <aside id="cssRightColumn" .>
-
-            <h2 id="asideHeader">Team Members</h2>
-            <div class="row">
-                <article class="col-sm-4">
-                    <img src="Images/pic1.jpg" class="img-responsive thumb" alt="Bronson Priest" />
-                    Bronson Priest. A catch-as-catch-can wrestler, who will twist you in a knot.
-                </article>
-                <article class="col-sm-4">
-                    <img src="Images/pic2.jpg" class="img-responsive thumb" alt="Hunter Shawn Angel" />
-                    Hunter Shawn Angel. Mixed Martial Artist with a devastating style.
-                </article>
-                <article class="col-sm-4">
-                    <img src="Images/pic3.jpg" class="img-responsive thumb" alt="Michael 'The Animal Goldbraith" />
-                    Michael "The Animal" Goldbraith is unpredictable, yet calculating in his maneuvers.
-                </article>
-                <article class="col-sm-4">
-                    <img src="Images/pic4.jpg" class="img-responsive thumb" alt="Marty Alex" />
-                    Marty Alex here is a cocky and brash wrestler, yet cowardly when it comes down to matching up with
-                    his opponent in the ring.
-                </article>
-                <article class="col-sm-4">
-                    <img src="Images/pic5.jpg" class="img-responsive thumb" alt="Nicolas Johnson" />
-                    Nicolas Johnson will have you cheering for his underdog ways as he fights for the gold.
-                </article>
-                <article class="col-sm-4">
-                    <img src="Images/pic6.jpg" class="img-responsive thumb" alt="Conan Daniels" />
-                    A wrestler with a tragic backstory, Conan Daniels strives to help his community and clean his past
-                    as a former felon.
-                </article>
-            </div>
-        </aside>
-    </main>
+    <section>
+        <div class="wrapper">
+            <main class="teamMembers">
+                <h2 id="cssLeftColumn">
+                    Get to know our team of professionals!
+                </h2>
+                <div class="teamMember">
+                    <img class="thumb" src="Images/pic1.jpg" alt="Bronson Priest" title="Bronson Priest" width="600" height="400" />
+                    <p class="memberName">Bronson Priest</p>
+                    <p class="memberBio">
+                        A catch-as-catch-can wrestler, who will twist you in a knot. Bronson Priest is known as the
+                        go-to guy if you want to have that true, old-school feel of the wrestling days long since passed.
+                    </p>
+                </div>
+                <div class="teamMember">
+                    <img class="thumb" src="Images/pic2.jpg" alt="Hunter Shawn Angel" title="Hunter Shawn Angel" width="600" height="400" />
+                    <p class="memberName">Hunter Shawn Angel</p>
+                    <p class="memberBio">
+                        Hunter Shawn Angel is a world-renowned Mixed Martial Artist with a devastating style. He comes to
+                        Knuckles Championship Wrestling to train talent to have the most convincing strikes as possible.
+                    </p>
+                </div>
+                <div class="teamMember">
+                    <img class="thumb" src="Images/pic3.jpg" alt="Michael 'The Animal' Goldbraith" title="Michael 'The Animal' Goldbraith" width="600" height="400" />
+                    <p class="memberName">Michael 'The Animal' Goldbraith</p>
+                    <p class="memberBio">
+                        Michael 'The Animal' Goldbraith is unpredictable, yet calculating in his maneuvers. Students will learn
+                        the art of selling and in-ring psychology.
+                    </p>
+                </div>
+                <div class="teamMember">
+                    <img class="thumb" src="Images/pic4.jpg" alt="Marty Alex" title="Marty Alex" width="600" height="400" />
+                    <p class="memberName">Marty Alex</p>
+                    <p class="memberBio">
+                        Marty Alex here is a cocky and brash wrestler, yet cowardly when it comes down to matching up with
+                        his opponent in the ring. Marty excels in promo work and carrying an air of "heel" charisma - something no
+                        doubt will be a valuable teaching asset.
+                    </p>
+                </div>
+                <div class="teamMember">
+                    <img class="thumb" src="Images/pic5.jpg" alt="Nicolas Johnson" title="Nicolas Johnson" width="600" height="400" />
+                    <p class="memberName">Nicolas Johnson</p>
+                    <p class="memberBio">
+                        Nicolas Johnson will have you cheering for his underdog ways as he fights for the gold.
+                        Nicolas a "babyface" magnetism that attracts the crowds and summons their cheers. If you're
+                        likeable, Nicolas is the go-to instructor.
+                    </p>
+                </div>
+                <div class="teamMember">
+                    <img class="thumb" src="Images/pic6.jpg" alt="Conan Daniels" title="Conan Daniels" width="600" height="400" />
+                    <p class="memberName">Conan Daniels</p>
+                    <p class="memberBio">
+                        A wrestler with a tragic backstory, Conan Daniels strives to help his community and clean his past as a
+                        former felon. This, of course, never happened but Conan is a creative mind, an asset that trainees will
+                        discover to be important in crafting their persona and character.
+                    </p>
+                </div>
+                <div class="clear"></div>
+                <div id="lightbox-container">
+                    <p>
+                        Click Anywhere To Close This Picture
+                    </p>
+                    <div id="lightbox-content"></div>
+                </div>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+                <script src="JS/lightbox.js"></script>
+            </main>
+        </div>
+    </section>
     <footer>
         &copy; Copyright 2021 Corey M. Anderson
+        <div class="socialFooter">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/AllEliteWrestling" target="_blank">
+                        <i class="fa fa-facebook-square" aria-hidden="true" title="FB" alt="Facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/allelitewrestling/" target="_blank">
+                        <i class="fa fa-instagram" aria-hidden="true" title="IG" alt="Instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/AEW" target="_blank">
+                        <i class="fa fa-twitter-square" aria-hidden="true" title="TWT" alt="Twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
